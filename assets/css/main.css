@@ -2003,6 +2003,7 @@ input, select, textarea {
 	}
 
 	form ::-moz-focus-inner {
+		
 		border: 0;
 	}
 
@@ -2187,6 +2188,7 @@ input, select, textarea {
 	}
 
 		#header:before {
+			
 			content: '';
 			display: inline-block;
 			vertical-align: middle;
@@ -2194,6 +2196,7 @@ input, select, textarea {
 		}
 
 		#header .inner {
+			
 			position: relative;
 			z-index: 1;
 			margin: 0;
@@ -2459,9 +2462,9 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
-		background: #2b252c;
-		color: #fff;
+		
+		background: #121211;
+		color: rgb(17, 205, 238);
 	}
 
 		#footer .icon.circled {
@@ -2475,7 +2478,7 @@ input, select, textarea {
 		}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #fff;
+			color: rgb(175, 22, 116);
 		}
 
 		#footer .contact {
@@ -2672,6 +2675,7 @@ input, select, textarea {
 			}
 
 				#header .inner {
+					
 					padding-left: 2em;
 					padding-right: 2em;
 				}
@@ -3052,6 +3056,7 @@ input, select, textarea {
 			}
 
 				#header .inner {
+					
 					padding-top: 1.5em;
 					padding-left: 1em;
 					padding-right: 1em;
@@ -3136,3 +3141,295 @@ input, select, textarea {
 					}
 
 	}
+	.about .content h3 {
+		font-weight: 700;
+		font-size: 26px;
+		color: #173b6c;
+	  }
+	  
+	  .about .content ul {
+		list-style: none;
+		padding: 0;
+	  }
+	  
+	  .about .content ul li {
+		padding-bottom: 10px;
+	  }
+	  
+	  .about .content ul i {
+		font-size: 20px;
+		padding-right: 2px;
+		color: #149ddd;
+	  }
+	  
+	  .about .content p:last-child {
+		margin-bottom: 0;
+	  }
+
+	  #button {
+		display: inline-block;
+		background-color: #FF9800;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		border-radius: 4px;
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		transition: background-color .3s, 
+		  opacity .5s, visibility .5s;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1000;
+	  }
+	  #goTopButton::after {
+		content: "\f077";
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 2em;
+		line-height: 50px;
+		color: #fff;
+	  }
+	  #goTopButton:hover {
+		cursor: pointer;
+		background-color: #333;
+	  }
+	  #goTopButton:active {
+		background-color: #555;
+	  }
+	  #goTopButton.show {
+		opacity: 1;
+		visibility: visible;
+	  }
+
+	  
+	  .img-fluid {
+		max-width: 100%;
+		height: auto;
+	  }
+	  
+	  .boxik img{
+		  float: left;
+	  }
+	  .textRight{
+		  margin-left: 30%;
+	  }
+
+	  .skillName{
+		font-size: 33px;
+		padding: 10px;
+		margin-bottom: 5px;
+	  }
+	/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+	.skillContainer{
+		-moz-column-count: 3;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 3;
+       -webkit-column-gap : 20px;
+       -moz-column-rule-color:  #ccc;
+       -moz-column-rule-style:  solid;
+       -moz-column-rule-width:  1px;
+       -webkit-column-rule-color:  #ccc;
+       -webkit-column-rule-style: solid ;
+       -webkit-column-rule-width:  1px;
+	}
+
+	
+	  
+	  	@keyframes progressAnimationStrikeHtml {
+		   from { width: 0 }
+		   to   { width: 60% }
+	  	}
+	  	@keyframes progressAnimationStrikePHP {
+			from { width: 0 }
+			to   { width: 35% }
+   		}
+   		@keyframes progressAnimationStrikeCC {
+			from { width: 0 }
+			to   { width: 40% }
+		}
+		@keyframes progressAnimationStrikeCSharp {
+			from { width: 0 }
+			to   { width: 55% }
+		}
+		@keyframes progressAnimationStrikeNodeAngularReact {
+			from { width: 0 }
+			to   { width: 25% }
+		}
+		@keyframes progressAnimationStrikeUnity {
+			from { width: 0 }
+			to   { width: 25% }
+		}
+
+  
+  .containers{ 
+	
+	background-color: rgb(192, 192, 192); 
+	width: 85%;
+	 
+		border-radius: 15px; 
+} 
+
+.skillsi { 
+	
+	background-color: rgb(83, 122, 189); 
+	color: white; 
+	padding: 1%; 
+	text-align: right; 
+	font-size: 20px; 
+		border-radius: 10px; 
+} 
+
+.htmls { 
+	animation: progressAnimationStrikeHtml 3s;
+	width: 60%; 
+	
+} 
+
+.phps { 
+	animation: progressAnimationStrikePHP 3s;
+	width: 35%;
+}
+.cC { 
+	animation: progressAnimationStrikeCC 3s;
+	width: 40%;
+}
+.cSharp { 
+	animation: progressAnimationStrikeCSharp 3s;
+	width: 55%;
+}
+.nodeAngularReact { 
+	animation: progressAnimationStrikeNodeAngularReact 3s;
+	width: 25%;
+}
+.unity { 
+	animation: progressAnimationStrikeUnity 3s;
+	width: 25%;
+}
+
+
+/* ARROW CODE*/
+
+.indicators{
+    position:relative;
+    width:50px;
+    height:50px;
+    
+    transform:rotate(45deg);}
+	.spans{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      box-sizing:border-box;
+      border:none;
+      border-bottom:3px solid #fff;
+      border-right:3px solid #fff;
+      animation:animates 1s linear infinite;}
+      .spans:nth-child(1){
+        top:-30px;
+        left:-30px;
+        animation-delay:0s;
+      }
+      .spans:nth-child(2){
+        top:-15px;
+        left:-15px;
+        animation-delay:0.2s;
+      }
+      .spans:nth-child(3){
+        top:0;
+        left:0;
+        animation-delay:0.4s;
+      }
+      .spans:nth-child(4){
+        top:15px;
+        left:15px;
+        animation-delay:0.6s;
+      }
+      .spans:nth-child(5){
+        top:30px;
+        left:30px;
+        animation-delay:0.8s;
+      }
+    
+
+
+@keyframes animates{
+  0%{
+    border-color:#fff;
+    transform:translate(0,0);
+  }
+   20%{
+    border-color:#fff;
+     transform:translate(15px,15px);
+  }
+   20.1%,100%{
+    border-color:#ffd64a;
+  }}
+
+
+
+  /*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #050d18;
+  }
+  
+  .resume .resume-item {
+	padding: 0 0 20px 20px;
+	margin-top: -2px;
+	border-left: 2px solid #1f5297;
+	position: relative;
+  }
+  
+  .resume .resume-item h4 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	color: #050d18;
+	margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+	font-size: 16px;
+	background: #e4edf9;
+	padding: 5px 15px;
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+	padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+	padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+	padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	left: -9px;
+	top: 0;
+	background: #fff;
+	border: 2px solid #1f5297;
+  }
