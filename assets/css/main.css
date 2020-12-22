@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f4f4;
+		
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -2165,8 +2165,8 @@ input, select, textarea {
 
 	.wrapper {
 		background: #fff;
-		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		margin: 0 0 1em 0;
+		padding: 2em 0 2em 0;
 	}
 
 		.wrapper.style2 {
@@ -3263,6 +3263,14 @@ input, select, textarea {
 			from { width: 0 }
 			to   { width: 25% }
 		}
+		@keyframes progressAnimationStrikeEnglish {
+			from { width: 0 }
+			to   { width: 90% }
+		}
+		@keyframes progressAnimationStrikePolish {
+			from { width: 0 }
+			to   { width: 90% }
+		}
 
   
   .containers{ 
@@ -3283,12 +3291,18 @@ input, select, textarea {
 		border-radius: 10px; 
 } 
 
+.english { 
+	animation: progressAnimationStrikeEnglish 3s;
+	width: 90%; 
+}
+.polish { 
+	animation: progressAnimationStrikePolish 3s;
+	width: 90%; 
+} 
 .htmls { 
 	animation: progressAnimationStrikeHtml 3s;
 	width: 60%; 
-	
-} 
-
+}
 .phps { 
 	animation: progressAnimationStrikePHP 3s;
 	width: 35%;
@@ -3311,65 +3325,7 @@ input, select, textarea {
 }
 
 
-/* ARROW CODE*/
 
-.indicators{
-    position:relative;
-    width:50px;
-    height:50px;
-    
-    transform:rotate(45deg);}
-	.spans{
-      position:absolute;
-      left:0;
-      top:0;
-      width:100%;
-      height:100%;
-      box-sizing:border-box;
-      border:none;
-      border-bottom:3px solid #fff;
-      border-right:3px solid #fff;
-      animation:animates 1s linear infinite;}
-      .spans:nth-child(1){
-        top:-30px;
-        left:-30px;
-        animation-delay:0s;
-      }
-      .spans:nth-child(2){
-        top:-15px;
-        left:-15px;
-        animation-delay:0.2s;
-      }
-      .spans:nth-child(3){
-        top:0;
-        left:0;
-        animation-delay:0.4s;
-      }
-      .spans:nth-child(4){
-        top:15px;
-        left:15px;
-        animation-delay:0.6s;
-      }
-      .spans:nth-child(5){
-        top:30px;
-        left:30px;
-        animation-delay:0.8s;
-      }
-    
-
-
-@keyframes animates{
-  0%{
-    border-color:#fff;
-    transform:translate(0,0);
-  }
-   20%{
-    border-color:#fff;
-     transform:translate(15px,15px);
-  }
-   20.1%,100%{
-    border-color:#ffd64a;
-  }}
 
 
 
