@@ -3271,6 +3271,10 @@ input, select, textarea {
 			from { width: 0 }
 			to   { width: 90% }
 		}
+		@keyframes progressAnimationStrikeSQL {
+			from { width: 0 }
+			to   { width: 55% }
+		}
 
   
   .containers{ 
@@ -3323,7 +3327,10 @@ input, select, textarea {
 	animation: progressAnimationStrikeUnity 3s;
 	width: 25%;
 }
-
+.sSQL { 
+	animation: progressAnimationStrikeSQL 3s;
+	width: 55%;
+}
 
 
 
